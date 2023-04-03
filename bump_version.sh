@@ -10,7 +10,7 @@ function update_version_string() {
   local NEW_VERSION=$2
   local FILE=$3
 
-  sed -i "s/Version: ${OLD_VERSION}/Version: ${NEW_VERSION}/" $FILE
+  sed -i "s/VERSION=\"${OLD_VERSION}\"/VERSION=\"${NEW_VERSION}\"/" $FILE
 }
 
 if [ $# -gt 2 ]; then

@@ -1,6 +1,8 @@
 #!/bin/bash
+VERSION="0.0.0"
 
 if [ $# -ne 3 ]; then
+  echo "transfer_glacier_deep_archive.sh Version: $VERSION"
   echo "Usage: ./transfer_glacier_deep_archive.sh <source_account_id> <source_bucket> <destination_bucket>"
   echo "Transfer objects from a Glacier Deep Archive S3 bucket in one account to a new bucket in another account."
   exit 1

@@ -1,6 +1,9 @@
 #!/bin/bash
 
+VERSION="0.0.0"
+
 if [ $# -ne 2 ]; then
+  echo "delete_objects_and_remove_permissions.sh Version: $VERSION"
   echo "Usage: ./delete_objects_and_remove_permissions.sh <source_bucket> <destination_bucket>"
   echo "Delete objects from the source S3 bucket and remove cross-account permissions from the destination S3 bucket."
   exit 1
